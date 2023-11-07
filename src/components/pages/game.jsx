@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './game.css'; // Assuming the CSS file for styling
-import circleImage from '../assets/circle.png'; // Import the circle image
-import crossImage from '../assets/cross.png'; // Import the cross image
+import './game.css';
+import circleImage from '../assets/circle.png';
+import crossImage from '../assets/cross.png';
 
 const TicTacToe = () => {
   const initialBoard = Array(9).fill(null);
@@ -70,8 +70,8 @@ const TicTacToe = () => {
     setWinner(null);
     setWinningLine([]);
     setXIsNext(true);
-    setPlayer1({ ...player1, score: 0 }); // Reset Player 1 score to 0
-    setPlayer2({ ...player2, score: 0 }); // Reset Player 2 score to 0
+    setPlayer1({ ...player1, score: 0 });
+    setPlayer2({ ...player2, score: 0 });
   };
 
   const nextGame = () => {
